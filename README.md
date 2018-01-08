@@ -1,2 +1,2 @@
-# Yalpam-Milis
-Yalpam - Milis Paket Yöneticisi
+# MPS-YAD
+Milis Paket Yöneticisi Arayüzü
