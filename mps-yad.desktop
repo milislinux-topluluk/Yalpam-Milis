@@ -1,10 +1,10 @@
 [Desktop Entry]
 Encoding=UTF-8
 Type=Application
-Name=Yalpam Paket Yöneticisi
+Name=mps-yad Paket Yöneticisi
 GenericName=Milis Linux Paket Yöneticisi
 Comment=Milis Linux Paket Yöneticisi
-Exec=sudo sh /usr/share/yalpam/yalpam.sh
+Exec=sudo sh /usr/share/mps-yad/mps-yad.sh
 Icon=system-software-install
 Terminal=false
 Categories=GNOME;GTK;System;Settings;X-XFCE-SettingsDialog;X-XFCE-SystemSettings;
