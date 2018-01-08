@@ -95,7 +95,8 @@ doupdate() {
 	[[ "$2" = "TRUE" ]] && args=$args" -m"
 	[[ "$3" = "TRUE" ]] && args=$args" -u"
 	[[ "$4" = "TRUE" ]] && args=$args" -p"
-	xterm ${xtermOptionsBlue} -e "yup $args" && doscan4pkgs
+	#xterm ${xtermOptionsBlue} -e "yup $args" && doscan4pkgs
+	doscan4pkgs
 	echo "1:TRUE"
 	echo "2:FALSE"
 	echo "3:TRUE"
