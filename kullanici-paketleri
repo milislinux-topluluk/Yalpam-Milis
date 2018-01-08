@@ -1,0 +1,5 @@
+#!/bin/sh
+grep -ri "surum=" /root/talimatlar/* | awk -F'/talimat:' '{print $1}' | xargs  -I {} basename {} > /tmp/isim.txt
+grep -ri "surum=" /root/talimatlar/* | awk -F'/talimat:' '{print $2}' | cut -d'=' -f2 > /tmp/surum.txt
+paste -d' ' /tmp/isim.txt /tmp/surum.txt > /tmp/issur.txt
+cat /tmp/issur.txt
