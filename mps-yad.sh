@@ -27,8 +27,8 @@ LANG=en_US.UTF-8
 [[ -z "$XAUTHORITY" ]] && [[ -e "$HOME/.Xauthority" ]] && export XAUTHORITY="$HOME/.Xauthority";
 
 hash paplay 2>/dev/null && [[ -d /usr/share/sounds/freedesktop/stereo/ ]] && {
-	export errorSnd="paplay /usr/share/mpsyad/hata.ogg"
-	export infoSnd="paplay /usr/share/mpsyad/bilgi.ogg"
+	export errorSnd="paplay /usr/share/mps-yad/hata.ogg"
+	export infoSnd="paplay /usr/share/mps-yad/bilgi.ogg"
 }
 
 msg() {
@@ -327,7 +327,7 @@ doscan4pkgs() {
 		yad --progress --pulsate --auto-close --no-buttons --width=340 --align="center" --center --borders=6 --skip-taskbar --title="Paketler sorgulanıyor" --text-align="center" --text=$"Lütfen bekleyin. <i>Milis Linux Deposu</i> paketleri sorgulanıyor..."
 
 	echo -e '\f' >> "${fpipepkgslcl}"
-    /usr/share/mpsyad/kullanici-paketleri |\
+    /usr/share/mps-yad/kullanici-paketleri |\
 #	cut -d ' ' -f3 /depo/paketler/paket.vt | awk -F'-x86' '{print $1}' | awk -F'#' '{print $1" "$2}' | sort | 
         awk '{printf "%d\n%s\n%s\n", ++i, $1, $2}' |\
 		tee -a "${fpipepkgslcl}" |\
