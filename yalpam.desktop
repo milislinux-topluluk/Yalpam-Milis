@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 Type=Application
-Name=Yalpam Paket Yöneticisi
+Exec=sudo sh /usr/share/yalpam/yalpam.sh
 GenericName=Milis Linux Paket Yöneticisi
 Comment=Milis Linux Paket Yöneticisi
 Exec=sudo yalpam
